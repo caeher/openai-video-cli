@@ -1,0 +1,16 @@
+- id: island-image
+  kind: image
+  request:
+    model: gpt-image-2.5-sunburst
+    prompt: A cinematic tropical island at sunset
+    size: 1024x1024
+    quality: medium
+    output: output/batch-island.png
+- id: forest-image
+  kind: image
+  request:
+    model: gpt-image-2.5-flare
+    prompt: A forest stream in soft natural light
+    size: 1536x1024
+    quality: low
+    output: output/batch-forest.png

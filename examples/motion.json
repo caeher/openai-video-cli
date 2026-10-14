@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "image": "assets/landscape.png",
+  "mask": "assets/water-mask.png",
+  "prompt": "Animate only the lower region with gentle water ripples",
+  "regions": [
+    {
+      "id": "water",
+      "polygon": [[0, 0.5], [1, 0.5], [1, 1], [0, 1]],
+      "controlPoints": [[0.5, 0.75]],
+      "vector": [0.1, 0],
+      "intensity": "subtle",
+      "description": "Gentle horizontal ripples in the lower half"
+    }
+  ],
+  "stationary": ["Upper region", "Camera"]
+}

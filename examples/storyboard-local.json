@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "name": "Deterministic local demonstration",
+  "scenes": [
+    { "id": "a", "order": 0, "description": "Local zoom", "prompt": "Planning description only", "seconds": 2, "inputs": ["assets/clip-a.mp4"], "output": "local-clips/a.mp4" },
+    { "id": "b", "order": 1, "description": "Local pan", "prompt": "Planning description only", "seconds": 2, "inputs": ["assets/clip-b.mp4"], "output": "local-clips/b.mp4", "dependsOn": ["a"] }
+  ],
+  "export": { "output": "local-exports/demo.mp4", "size": "640x360", "fps": 24, "transition": "fade", "transitionSeconds": 0.25 }
+}

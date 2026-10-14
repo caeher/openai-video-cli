@@ -1,0 +1,2 @@
+{"id":"island","kind":"video","request":{"operation":"text_to_video","model":"sora-2","prompt":"A tropical island at sunset"}}
+{"id":"forest","kind":"video","request":{"operation":"text_to_video","model":"sora-2-pro","prompt":"A forest stream with gentle ripples"}}

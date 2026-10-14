@@ -1,0 +1,92 @@
+{
+  "name": "openai-video-cli",
+  "version": "1.0.0",
+  "description": "Capability-aware OpenAI audiovisual CLI with prompts, storyboards and safe local FFmpeg processing",
+  "type": "module",
+  "license": "MIT",
+  "author": "Cristian Escalante",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caeher/openai-video-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caeher/openai-video-cli/issues"
+  },
+  "homepage": "https://github.com/caeher/openai-video-cli#readme",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "packageManager": "pnpm@12.3.4",
+  "bin": {
+    "oaivideo": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs",
+    "examples/README.md",
+    "examples/prompt.json",
+    "examples/prompt.yaml",
+    "examples/motion.json",
+    "examples/storyboard.json",
+    "examples/storyboard-local.json",
+    "examples/video-batch.jsonl",
+    "examples/image-batch.yaml",
+    "*.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:real": "node scripts/test-real.mjs",
+    "lint": "eslint src tests scripts",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/cli.ts",
+    "docs": "tsx scripts/commands-docs.ts",
+    "format": "prettier --write src tests scripts *.ts *.js *.json",
+    "format:check": "prettier --check src tests scripts *.ts *.js *.json",
+    "prepack": "pnpm build"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "8.7.3",
+    "chalk": "6.0.1",
+    "cli-progress": "3.12.0",
+    "commander": "15.0.0",
+    "ipaddr.js": "2.5.0",
+    "openai": "7.33.0",
+    "ora": "9.4.1",
+    "pino": "10.4.0",
+    "proper-lockfile": "4.1.2",
+    "sharp": "0.35.5",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@types/cli-progress": "^3.11.0",
+    "@types/node": "^24.0.0",
+    "@types/proper-lockfile": "^4.1.4",
+    "eslint": "10.12.0",
+    "husky": "9.1.7",
+    "prettier": "3.9.10",
+    "tsup": "9.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "8.71.2",
+    "vitest": "5.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

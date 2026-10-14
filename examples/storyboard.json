@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "Island production plan",
+  "scenes": [
+    {
+      "id": "establishing", "order": 0,
+      "description": "Establish the island",
+      "prompt": "A slow aerial orbit over a tropical lagoon at sunset",
+      "model": "auto", "seconds": 8, "size": "1280x720",
+      "references": [], "style": "Cinematic realism", "camera": "Wide aerial orbit",
+      "audio": "Gentle surf", "inputs": [], "output": "clips/establishing.mp4", "dependsOn": []
+    },
+    {
+      "id": "shoreline", "order": 1,
+      "description": "Continue toward the shore",
+      "prompt": "The camera slowly follows waves onto the same island shoreline",
+      "model": "auto", "seconds": 8, "size": "1280x720",
+      "references": [], "style": "Match the prior scene's light and colors", "camera": "Low smooth dolly",
+      "audio": "Soft surf", "inputs": [], "output": "clips/shoreline.mp4", "dependsOn": ["establishing"]
+    }
+  ],
+  "export": { "output": "exports/island.mp4", "size": "1280x720", "fps": 30, "transition": "fade", "transitionSeconds": 0.5 }
+}

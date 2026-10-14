@@ -1,0 +1,21 @@
+{
+  "subject": "A tropical island",
+  "scene": "A lagoon bordered by palm trees at sunset",
+  "environment": "Warm air and a light coastal breeze",
+  "mainAction": "Small waves roll gently onto the beach",
+  "secondaryActions": "Palm leaves sway softly",
+  "cameraMovement": "Slow aerial orbit with steady speed",
+  "framing": "Wide establishing shot",
+  "lens": "Natural wide-angle perspective with deep depth of field",
+  "lighting": "Warm low-angle sunlight",
+  "colorPalette": "Teal water and amber highlights",
+  "visualStyle": "Cinematic realism",
+  "temporalSequence": "Begin over the lagoon, reveal the shoreline, finish on the sunset",
+  "motionPhysics": "Plausible waves and consistent wind direction",
+  "characterContinuity": "No characters",
+  "audioDescription": "Gentle surf and wind; no music",
+  "dialogue": "No dialogue",
+  "avoidance": "Avoid abrupt camera moves and visible text",
+  "referenceAssets": "Landscape reference is a planning asset; native compatibility must be verified",
+  "shotTransitions": "One continuous shot"
+}

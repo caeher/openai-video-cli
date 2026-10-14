@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.env
+.oaivideo/
+output/
+*.tgz
+*.log
+examples/assets/
+examples/local-clips/
+examples/local-exports/
+examples/clips/
+examples/exports/
+examples/*.copy.json
+examples/*.saved.json

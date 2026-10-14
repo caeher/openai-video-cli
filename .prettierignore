@@ -1,0 +1,8 @@
+dist/
+node_modules/
+pnpm-lock.yaml
+COMMANDS.md
+examples/assets/
+examples/local-clips/
+examples/local-exports/
+output/
